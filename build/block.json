@@ -1,0 +1,76 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "creativeslice/cslice-card-block",
+  "version": "0.1.0",
+  "title": "CSlice Card Block",
+  "category": "widgets",
+  "icon": "embed-generic",
+  "description": "A basic card block for creative slice projects .",
+  "attributes": {
+    "card_size": {
+      "type": "string",
+      "enum": [
+        "xSmall",
+        "small",
+        "medium",
+        "large"
+      ],
+      "default": "medium"
+    },
+    "card_borderless": {
+      "type": "boolean",
+      "default": true
+    },
+    "card_rounded": {
+      "type": "boolean",
+      "default": true
+    },
+    "card_elevation": {
+      "type": "integer",
+      "default": 3
+    },
+    "card_header_size": {
+      "type": "string",
+      "enum": [
+        "xSmall",
+        "small",
+        "medium",
+        "large"
+      ],
+      "default": "medium"
+    },
+    "header_text": {
+      "type": "string",
+      "default": "Header Text"
+    },
+    "header_level": {
+      "type": "integer",
+      "default": 2
+    },
+    "link_url": {
+      "type": "string"
+    },
+    "link_rel": {
+      "type": "string"
+    },
+    "link_target": {
+      "type": "string"
+    },
+    "background_image_url": {
+      "type": "string"
+    }
+  },
+  "example": {
+    "attributes": {
+      "header_text": "Example Header"
+    }
+  },
+  "supports": {
+    "html": false
+  },
+  "textdomain": "cslice-card-block",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}
